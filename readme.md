@@ -1,5 +1,6 @@
 If you experience connection problems, check the following:
 
+Changed some text in readme.
 
 
 \* Make sure the database is actually available on your server. You can find the database backup at: `assets\\app-data\\db\\tourism.sql`
