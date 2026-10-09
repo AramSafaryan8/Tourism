@@ -1,0 +1,36 @@
+ul.subheading {
+    margin-top: 0;
+}
+
+.about-cntr {
+    display: flex;
+    flex-direction: column;
+    margin-block: 2rem;
+    row-gap: 2rem;
+}
+
+.about-cntr > hgroup {
+    margin-bottom: 2rem;
+}
+
+.desc-cntr {
+    margin-left: 4%;
+}
+
+.main > .content-cntr {
+    margin: 0 var(--header-margin-inline);
+}
+
+.subheading-cntr {
+    border-left: 0.2rem solid #a96311;
+    margin-left: 2rem;
+    padding-left: 1rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+}
+
+.desc-cntr {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,131 @@
+.tour-cntr {
+    --padding-block:1.5rem;
+
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    height: 100%;
+    padding: var(--padding-block) 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.tour-cntr > .content-cntr {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+
+.tour-cntr .btn.ticket {
+    align-items: center;
+    bottom: -1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-weight: bold;
+    justify-content: center;
+    position: absolute;
+    right: 1rem;
+}
+
+.tour-cntr .desc-cntr {
+    align-items: end;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.tour-cntr .desc-cntr > hgroup {
+    line-height: 1.5;
+}
+
+.tour-cntr .desc-cntr time {
+    color: #fff;
+}
+
+.tour-cntr .desc-cntr h3 {
+    color: #fff;
+}
+
+.tour-cntr .desc-cntr .field {
+    align-items: baseline;
+    column-gap: .5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1.15rem;
+}
+
+.tour-cntr .desc-cntr .field.destinations {
+    display: block;
+    height: max-content;
+}
+
+.tour-cntr .desc-cntr .field.destinations h3 {
+    float: left;
+}
+
+.tour-cntr .desc-cntr .field.destinations ol.numbered {
+    align-items: flex-end;
+    height: 100%;
+    margin-left: 2rem;
+    margin-top: .2rem;
+}
+
+.tour-cntr .pic-cntr {
+    --max-size:250px;
+
+    height: 17vw;
+    margin-inline: auto;
+    margin-top: calc(var(--padding-block) + .5rem);
+    max-height: var(--max-size);
+    max-width: var(--max-size);
+    width: 17vw;
+}
+
+#BtnBooking {
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+    margin-inline: auto;
+    margin-top: 2rem;
+    padding: .5rem 1.5rem;
+}
+
+#ToursCntr {
+    margin-bottom: 6rem;
+    width: 90%;
+}
+
+#ToursCntr > ul {
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+#ToursCntr > ul .tour-cntr .subtitle {
+    background-color: #fff;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    color: var(--main-color);
+    left: 0;
+    padding: .2rem 1.5rem;
+    position: absolute;
+    top: calc(var(--padding-block) - .5rem);
+}
+
+#ToursCntr > .title {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1440px) {
+    #ToursCntr {
+        width: 95%;
+    }
+}

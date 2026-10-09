@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php require $dirs->views . '/shared/head.php'; ?>
+<body>
+    <div class="main">
+        <?php require $dirs->views . '/shared/header.phtml'; ?>
+        <div class="content-cntr">{{@content}}</div>
+        <?php require $dirs->views . '/shared/footer.php';?>
+    </div>
+    {{@popup}}
+</body>
+</html>

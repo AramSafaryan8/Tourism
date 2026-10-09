@@ -1,0 +1,41 @@
+<header class="light">
+    <div class="panel header">
+        <a href="<?= $dirs->webRoot; ?>/" class="link nav"><h1 class="light">Tourism</h1></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="<?= $dirs->webRoot; ?>/attractions" class="link nav">Attractions</a>
+                </li>
+                <li>
+                    <a href="<?= $dirs->webRoot; ?>/guides" class="link nav">Guides</a>
+                </li>
+                <li>
+                    <?php $path = ('/Tourism/' == $_SERVER['REDIRECT_URL']) ? './' : '/Tourism/'; ?>
+                    <a href="<?= $path; ?>#StatsCntr" class="link nav">Statistics</a>
+                </li>
+                <li>
+                    <a href="<?= $dirs->webRoot; ?>/about" class="link nav">About</a>
+                </li>
+                <li id="AuthCntr">
+                <?php
+                    $action = ['sign', 'in'];
+
+                    if (isset($_SESSION['token'])) {
+                        $action = ['sign', 'out']; ?>
+                    <a href="<?= $dirs->webRoot; ?>/bookings" class="link nav">
+                        <span class="icon block bg-contain bg-no-repeat bg-center" style="background-image: url('<?= $dirs->webRoot; ?>/public/images/icons/shopping-basket.svg');"></span>
+                    </a>
+                <?php } ?>
+                    <div class="cntr">
+                        <?php
+                            if (isset($_SESSION['token'])) { ?>
+                                <p>Hello, <?= empty($_SESSION['username']) ? 'user' : $_SESSION['username']; ?></p>
+                            <?php }    
+                        ?>
+                        <a href="<?= $dirs->webRoot; ?>/auth/<?= $action[0] . $action[1]; ?>" class="link btn common"><?= ucfirst($action[0]) . ' ' . ucfirst($action[1]); ?></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

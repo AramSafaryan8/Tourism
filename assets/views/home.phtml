@@ -1,0 +1,145 @@
+<article id="MainPostCntr">
+    <h1 class="hidden">Top rated <b>attractions</b></h1>
+    <div class="slider-cntr">
+        <input type="button" id="SlideLeftBtn" class="slide-btn" value="<" />
+        {{@top-rated-places}}
+        <input type="button" id="SlideRightBtn" class="slide-btn" value=">" />
+    </div>
+</article>
+<article id="CountriesCntr">
+    <h1 class="title">Countries to visit</h1>
+    <ul class="content-cntr">
+        <li class="country-cntr light-shadow">
+            <div class="pic-cntr">
+                <a href="<?= $dirs->webRoot; ?>/attractions?country=italy" class="link">
+                    <img src="<?= $dirs->webRoot; ?>/public/images/countries/outlines/italy.png" alt="The outline of Italy" class="pic contain" />
+                </a>
+            </div>
+            <article class="desc-cntr">
+                <section class="heading-cntr">
+                    <h2 class="title">Italy</h2>
+                    <div class="desc">
+                        <p>Embark on an enchanting journey through Italy's storied landscapes, where ancient history meets Renaissance splendor. From the iconic Colosseum in Rome to the art-filled streets of Florence, immerse yourself in a symphony of flavors and cultural richness.</p>
+                        <p>Let Italy's timeless charm and picturesque vistas be the canvas for unforgettable memories, where each moment whispers the sweet allure of la dolce vita.</p>
+                    </div>
+                </section>
+            </article>
+        </li>
+        <li class="country-cntr light-shadow">
+            <div class="pic-cntr">
+                <a href="<?= $dirs->webRoot; ?>/attractions?country=france" class="link">
+                    <img src="/Tourism/public/images/countries/outlines/france.png" alt="The outline of France" class="pic contain" />
+                </a>
+            </div>
+            <article class="desc-cntr">
+                <section class="heading-cntr">
+                    <h2 class="title">France</h2>
+                    <div class="desc">
+                        <p>France, a tapestry of elegance and allure, where cobblestone streets whisper tales of a rich history. From the romantic allure of Paris, adorned with iconic landmarks, to the sun-kissed vineyards of Bordeaux, France is a symphony of art, culture, and gastronomy.</p>
+                        <p>In every sip of Bordeaux wine or gaze upon the Eiffel Tower, France invites you to savor life's exquisite moments, encapsulating the essence of joie de vivre.</p>
+                    </div>
+                </section>
+            </article>
+        </li>
+        <li class="country-cntr light-shadow">
+            <div class="pic-cntr">
+                <a href="<?= $dirs->webRoot; ?>/attractions?country=usa" class="link">
+                    <img src="<?= $dirs->webRoot; ?>/public/images/countries/outlines/usa.png" alt="The outline of USA(United States of America)" class="pic contain" />
+                </a>
+            </div>
+            <article class="desc-cntr">
+                <section class="heading-cntr">
+                    <h2 class="title"><abbr title="Stands for United States of America">USA</abbr></h2>
+                    <div class="desc">
+                        <p>The USA, a kaleidoscope of dreams, spanning coast to coast. From the skyscrapers of New York to the red rocks of Arizona, it's a nation where diversity is its strength. The rhythm of jazz in New Orleans, the tech pulse of Silicon Valley, and the wild expanse of Yellowstone; each state is a chapter in a grand narrative.</p>
+                        <p>With the Statue of Liberty as its symbol, the USA weaves a story of liberty, innovation, and boundless horizons, where every dawn brings a new opportunity in the land of the free.</p>
+                    </div>
+                </section>
+            </article>
+        </li>
+        <li class="country-cntr light-shadow">
+            <div class="pic-cntr">
+                <a href="<?= $dirs->webRoot; ?>/attractions?country=armenia" class="link">
+                    <img src="<?= $dirs->webRoot; ?>/public/images/countries/outlines/armenia.png" alt="The outline of Armenia" class="pic contain" />
+                </a>
+            </div>
+            <article class="desc-cntr">
+                <section class="heading-cntr">
+                    <h2 class="title">Armenia</h2>
+                    <div class="desc">
+                        <p>Armenia, a land where ancient whispers echo through timeless landscapes. Nestled in the embrace of the Caucasus, its rugged mountains cradle stories etched in stone. Yerevan, a city both modern and ancient, pulsates with the heartbeat of a resilient culture.</p>
+                        <p>Khachkars stand as poetic sentinels, while Lake Sevan mirrors the azure skies above. In every apricot orchard and monastery's shadow, Armenia beckons with a quiet grace, inviting you to uncover the hidden gems of a nation proud of its enduring spirit.</p>
+                    </div>
+                </section>
+            </article>
+        </li>
+    </ul>
+</article>
+<article id="ToursCntr">
+    <h1 class="title">Incoming <b>tours</b></h1>
+    {{@tours}}
+</article>
+<aside id="StatsCntr">
+    <div class="content-cntr">
+        <table id="Chart" class="hr">
+            <caption>
+                <h1><span class="separated"><b>Tourism</b></span> throughout years</h1>
+                <p style="margin-top: 1rem; font-size: 1.2rem;">Conducted <b>tours</b></p>
+            </caption>
+            <thead>
+                <tr>
+                    <th class="empty-block"></th>
+                    <th class="first-block">0</th>
+                    <th>8000</th>
+                    <th>16000</th>
+                    <th>24000</th>
+                    <th>32000</th>
+                    <th>40000</th>
+                    <th class="last-block">48000</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>2014</th>
+                    <td colspan="7"><meter min="0" max="480" value="150" class="square hr"></meter></td>
+                </tr>
+                <tr>
+                    <th>2015</th>
+                    <td colspan="7"><meter min="0" max="480" value="190" class="square hr"></meter></td>
+                </tr>
+                <tr>
+                    <th>2016</th>
+                    <td colspan="7"><meter min="0" max="480" value="180" class="square hr"></meter></td>
+                </tr>
+                <tr>
+                    <th>2017</th>
+                    <td colspan="7"><meter min="0" max="480" value="230" class="square hr"></meter></td>
+                </tr>
+                <tr>
+                    <th>2018</th>
+                    <td colspan="7"><meter min="0" max="480" value="310" class="square hr"></meter></td>
+                </tr>
+                <tr>
+                    <th>2019</th>
+                    <td colspan="7"><meter min="0" max="480" value="280" class="square hr"></meter></td>
+                </tr>
+                <tr>
+                    <th>2020</th>
+                    <td colspan="7"><meter min="0" max="480" value="270" class="square hr"></meter></td>
+                </tr>
+                <tr>
+                    <th>2021</th>
+                    <td colspan="7"><meter min="0" max="480" value="300" class="square hr"></meter></td>
+                </tr>
+                <tr>
+                    <th>2022</th>
+                    <td colspan="7"><meter min="0" max="480" value="315" class="square hr"></meter></td>
+                </tr>
+                <tr>
+                    <th>2023</th>
+                    <td colspan="7"><meter min="0" max="480" value="410" class="square hr"></meter></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</aside>

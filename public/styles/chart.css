@@ -1,0 +1,55 @@
+#Chart > caption {
+    margin-bottom: 2rem;
+}
+
+#Chart.hr {
+    --border:.15rem solid #d3d3d3;
+
+    border-spacing: 0;
+}
+
+#Chart.hr > thead > tr:last-child > * {
+    border-bottom: var(--border);
+}
+
+#Chart.hr > tbody > tr > th {
+    padding-inline: 1rem;
+}
+
+#Chart.hr > tbody > tr > td,
+#Chart.hr > thead th.first-block {
+    border-left: var(--border);
+}
+
+#Chart.hr > thead th {
+    padding: .5rem 3rem;
+}
+
+#Chart.hr > thead th.empty-block {
+    padding: 0;
+}
+
+#Chart.hr > thead th.first-block {
+    padding-left: 0;
+}
+
+#Chart.hr > thead th.last-block {
+    padding-right: 0;
+}
+
+#StatsCntr {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
+
+#StatsCntr > hgroup {
+    font-size: 1.3rem;
+    margin-block: auto;
+}
+
+#StatsCntr .separated {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: .2rem 1rem;    
+}

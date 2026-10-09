@@ -1,0 +1,40 @@
+@media (max-width: 1440px) {
+    :root {
+        --slide-items-count:5 !important;
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --slide-items-count:4 !important;
+
+        font-size: 13px;
+    }
+
+    .panel.footer > .contacts-cntr > .content-cntr {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+@media (max-width: 735px) {
+    :root {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 620px) {
+    :root {
+        --slide-items-count:3 !important;
+
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 565px) {
+    :root {
+        font-size: 9px;
+
+        --slide-items-count:2 !important;
+    }
+}

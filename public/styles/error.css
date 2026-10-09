@@ -1,0 +1,35 @@
+form .err-cntr {
+    font-size: 1.2rem;
+}
+
+form .err-cntr,
+form .err-cntr .separator.hr {
+    width: 100%;
+}
+
+form .err-cntr > .err-msg-cntr {
+    color: #e9967a;
+    max-width: 34.5rem;
+}
+
+.err-cntr,
+.err-msg-cntr {
+    margin-block: 1.5rem;
+}
+
+.err-msg-cntr > .subtitle {
+    margin-bottom: 1rem;
+}
+
+.main > .content-cntr > .err-msg-cntr {
+    margin-left: 8%;
+}
+
+.main > .content-cntr > .err-msg-cntr > p {
+    font-size: 1.2rem;
+}
+
+.main > .content-cntr > .err-msg-cntr > .subtitle {
+    color: var(--second-color);
+    margin-bottom: 1rem;
+}

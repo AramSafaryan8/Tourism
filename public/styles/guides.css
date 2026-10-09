@@ -1,0 +1,70 @@
+.main > .content-cntr {
+    row-gap: 2rem;
+}
+
+.main > .content-cntr > ul {
+    column-gap: 2.5rem;
+    display: flex;
+}
+
+.guide-cntr {
+    align-items: center;
+    background: linear-gradient(to bottom, #2e6b52 42%, transparent 42%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    row-gap: 2rem;
+}
+
+.guide-cntr > .desc-cntr {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.guide-cntr > .pic-cntr {
+    border: .4rem solid #fff;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top, #2e6b52 52%, #fff 52%);
+    height: 175px;
+    width: 200px;
+}
+
+.guide-cntr > .title {
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.guide-cntr > .separator.hr {
+    border-width: .2rem;
+    padding-inline: 9rem;
+    width: 100%;
+}
+
+.guide-cntr > .desc-cntr > section {
+    align-items: center;
+    column-gap: 1rem;
+    display: flex;
+}
+
+.guide-cntr > .desc-cntr > section > h2 {
+    color: var(--second-color);
+}
+
+.guide-cntr > .desc-cntr > section > p {
+    font-size: 1.1rem;
+}
+
+.guide-cntr > .desc-cntr > section > h2::after {
+    content: ':';
+}
+
+.guide-cntr > .desc-cntr > section > .stars-cntr {
+    column-gap: .5rem;
+    display: flex;
+}
+
+.guide-cntr > .desc-cntr > section > .stars-cntr > .star {
+    height: 2.5rem;
+}

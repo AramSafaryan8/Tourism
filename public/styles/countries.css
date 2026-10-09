@@ -1,0 +1,20 @@
+.hr.armenia.active {
+    border-image-source: linear-gradient(to right, #d70d1a 33.3%, #1724a0 33.3%, #1724a0 66.6%, #efac11 66.6%, #efac11 100%);
+}
+
+.hr.france.active {
+    border-image-source: linear-gradient(to right, #072254 33.3%, #fff 33.3%, #fff 66.6%, #cc172a 66.6%, #cc172a 100%);
+}
+
+.hr.italy.active {
+    border-image-source: linear-gradient(to right, #059544 33.3%, #fff 33.3%, #fff 66.6%, #cd2a37 66.6%, #cd2a37 100%);
+}
+
+.hr.usa.active {
+    border-image-source: url('../images/icons/flags/usa_vr_reversed.jpg');
+}
+
+.slider-cntr .item-cntr > .hr.active {
+    border-image-slice: 1;
+    scale: var(--item-augmentation-size);
+}

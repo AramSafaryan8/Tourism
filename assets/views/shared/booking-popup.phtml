@@ -1,0 +1,36 @@
+<aside id="Booking" class="popup">
+    <div class="content-cntr">
+        <h1 class="hidden">Booking form</h1>
+        <form action="<?= $dirs->webRoot; ?>/booking" method="post" id="PopupForm">
+            <fieldset>
+                <legend class="title bold">Credentials</legend>
+                <footer class="err-cntr">
+                    <span class="separator hr"></span>
+                    <span class="separator hr" style="margin-block: 0;"></span>
+                </footer>
+                <div class="content-cntr">
+                    <div class="fields-cntr">
+                        <p class="field">
+                            <label for="Email">Email</label>
+                            <input type="email" name="Email" id="Email" autocomplete="off" disabled="disabled" value="{{@user-email}}" />
+                        </p>
+                        <p class="field">
+                            <label for="Username">Username</label>
+                            <input type="text" name="Username" id="Username" autocomplete="off" disabled="disabled" value="{{@user-username}}" />
+                        </p>
+                    </div>
+                    <div class="fields-cntr">
+                        <p class="field">
+                            <label for="CCNumber"><abbr title="Stands for Credit Card.">CC</abbr>-number</label>
+                            <input type="text" name="CCNumber" id="CCNumber" autocomplete="cc-number" placeholder="XXXX-XXXX-XXXX-XXXX" size="24" required="required" />
+                        </p>
+                    </div>
+                </div>
+            </fieldset>
+            <input type="submit" id="BtnBooking" class="btn" value="Book tour" />
+        </form>
+        <button type="button" id="BtnClose" class="btn">
+            <span class="inline-block icon bg-contain bg-no-repeat" style="background-image: url('<?= $dirs->webRoot; ?>/public/images/icons/closing.svg');"></span>
+        </button>
+    </div>
+</aside>

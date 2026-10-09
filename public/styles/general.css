@@ -1,0 +1,316 @@
+:root {
+    --gray-light:#b3b3b3;
+    --gray-background:#f2f2f4;
+    --main-background-color:#fff;
+    --main-color:#2e6b52;
+    --main-color-dark:#003b23;
+    --second-color:#2f3543;
+    --third-color:#daa520;
+
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+@keyframes fill-hr {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Kumbh';
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+b {
+    font-weight: inherit;
+}
+
+body {
+    background-color: var(--gray-background);
+    position: relative;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    background: unset;
+    border: unset;
+    cursor: pointer;
+}
+
+fieldset {
+    border: unset;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+
+input {
+    background-color: unset;
+    border: unset;
+    outline: unset;
+}
+
+input:read-only {
+    cursor: not-allowed;
+}
+
+input[type="button"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    margin: 0 auto;
+}
+
+meter {
+    height: 4rem;
+}
+
+meter.hr {
+    width: 0;
+}
+
+meter.square::-webkit-meter-bar {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+meter.square::-webkit-meter-optimum-value {
+    background-color: #1e90ff;
+    transition: width .5s ease-in-out;
+}
+
+ol.numbered {
+    list-style-type: decimal;
+}
+
+ol.numbered.inline,
+ul.inline {
+    column-gap: 2rem;
+}
+
+ol.numbered > li::marker {
+    color: #fff;
+}
+
+span.marked.dominanta {
+    color: var(--third-color);
+}
+
+span.separated {
+    color: var(--main-color);
+    padding: 0.2rem;
+    background-color: #fff;
+}
+
+span.up-register {
+    background-color: #fff;
+    color: #ff8c00;
+    font-size: 1rem;
+    margin-left: 2%;
+    padding: 1%;
+    vertical-align: super;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+ul.inline,
+ol.inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+ul.subheading > li {
+    margin-top: 3%;
+}
+
+ul.subheading > li::marker,
+.title,
+span.marked {
+    color: var(--main-color);
+}
+
+.anim-fill.hr {
+    animation: fill-hr .7s ease-in-out;
+    width: 100%;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+.bg-contain {
+    background-size: contain;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.block {
+    display: block;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.btn.common {
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.6rem 1.2rem;
+}
+
+.bulleted {
+    list-style-type: disc;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon {
+    --icon-size:3rem;
+
+    height: var(--icon-size);
+    width: var(--icon-size);
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.light-shadow {
+    box-shadow: 0 0 15px -13px #000;
+}
+
+.lighter {
+    font-weight: 500;
+}
+
+.link {
+    color: #000;
+}
+
+.link.nav {
+    align-self: center;
+    display: inline-flex;
+    flex-direction: column;
+    transition: text-decoration .5s ease-in-out;
+}
+
+.link.nav::after {
+    background-color: #000;
+    content: '';
+    display: inline-block;
+    height: .15rem;
+    width: 0;
+    transition: width .3s ease-in-out;
+}
+
+.link.nav:hover::after {
+    width: 100%;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic {
+    height: 100%;
+    width: 100%;
+}
+
+.pic.contain {
+    object-fit: contain;
+}
+
+.pic.cover {
+    object-fit: cover;
+}
+
+.separator {
+    border: 1px solid #fff;
+    display: block;
+}
+
+.separator.hr {
+    border-color: var(--main-color);
+    margin-inline: auto;
+    width: 55%;
+}
+
+.separator.vr {
+    height: 100%;
+}
+
+.subheading {
+    font-size: 1.5rem;
+}
+
+.thin {
+    font-weight: 400;
+}
+
+.title.cover {
+    background-color: var(--main-color);
+    color: #fff;
+    left: 0;
+    padding: .2rem 1rem;
+    position: absolute;
+    top: 3%;
+}
+
+.title.cover::before {
+    --padding-vr:2%;
+
+    background-color: var(--main-color-dark);
+    content: '';
+    display: block;
+    height: 100%;
+    margin-top: calc(var(--padding-vr) * (-1));
+    padding-block: var(--padding-vr);
+    position: absolute;
+    top: 0;
+    width: 20%;
+    z-index: -1;
+}
+
+.unvisible {
+    visibility: hidden;
+}

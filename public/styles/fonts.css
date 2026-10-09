@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Kumbh';
+    src: url('../../assets/content/fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf');
+}
+
+.extra-light {
+    font-weight: 200;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.medium {
+    font-weight: 400;
+}

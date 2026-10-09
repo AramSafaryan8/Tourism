@@ -1,0 +1,84 @@
+label {
+    color: #fff;
+    cursor: pointer;
+}
+
+label::after {
+    content: ':';
+    font-weight: 800;
+}
+
+.auth-form {
+    align-items: center;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 3%;
+    position: relative;
+    row-gap: 1rem;
+}
+
+.auth-form,
+.auth-form input {
+    font-size: 1.5rem;
+}
+
+.auth-form > .err-cntr .separator.hr {
+    border-color: #fff;
+}
+
+.auth-form fieldset {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.auth-form .fields-cntr {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.auth-form input {
+    border-bottom: .15rem solid #fff;
+    color: #a9a9a9;
+    padding: .2rem;
+    height: max-content;
+    width: 90%;
+}
+
+.auth-form input::placeholder {
+    color: #a9a9a9;
+}
+
+.auth-form p.field {
+    column-gap: 2rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.auth-form p.field.btn {
+    align-self: center;
+}
+
+.auth-form p.field.btn > .btn {
+    border: unset;
+    width: 100%;
+}
+
+.auth-form .panel {
+    max-width: 27rem;
+}
+
+.btn.auth {
+    background-color: var(--third-color);
+    color: #fff;
+    font-size: 2rem;
+    padding: .6rem 1.2rem;
+}
+
+.main {
+    row-gap: 3rem;
+}
